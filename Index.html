@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IE Web Architects — Interactive 3D & AI</title>
+  <meta name="description" content="IE Web Architects builds interactive 3D websites and AI-integrated web applications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="iewebstyles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home">
+        <div class="brand-badge" aria-hidden="true">
+          <!-- cube icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2l8 4.5v11L12 22l-8-4.5v-11L12 2z" stroke="#fff" stroke-opacity=".95" stroke-width="1.4"/>
+            <path d="M12 22V12M20 6.5l-8 4.5-8-4.5" stroke="#fff" stroke-opacity=".6" stroke-width="1.2"/>
+          </svg>
+        </div>
+        <div class="brand-title">
+          <small>IE WEB ARCHITECTS</small>
+          <strong style="display:block;font-size:1.1rem;margin-top:2px">Interactive 3D & AI</strong>
+        </div>
+      </a>
+      <nav aria-label="Primary" class="desktop-nav">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="menu-btn" id="menuBtn" aria-controls="mobile" aria-expanded="false" role="button" tabindex="0">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16M4 18h16" stroke="#e5e7eb" stroke-width="1.6" stroke-linecap="round"/></svg>
+        Menu
+      </div>
+      <a class="btn" href="#contact">Start a Project</a>
+    </div>
+    <div id="mobile"></div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="container hero">
+    <div>
+      <div class="kicker">Premium 3D Websites • AI-Integrated Apps</div>
+      <h1>Build the web that <span class="gradient-text">moves</span></h1>
+      <p class="lead">We craft interactive 3D experiences and ship production-ready AI features—chatbots, recommendation engines, predictive analytics—tailored for modern brands.</p>
+      <div class="pills" aria-label="Highlights">
+        <span class="pill"><span class="chip"></span>Performance-first</span>
+        <span class="pill"><span class="chip"></span>SEO & Accessibility</span>
+        <span class="pill"><span class="chip"></span>Maintainable Code</span>
+      </div>
+      <div class="cta">
+        <a class="ghost" href="#work">See Our Work</a>
+        <a class="btn" href="#contact">Get a Quote</a>
+      </div>
+    </div>
+    <div>
+      <div class="stage" aria-label="3D scene">
+        <canvas id="scene"></canvas>
+      </div>
+      <div class="drag-hint">Drag to orbit • Scroll to admire</div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="container">
+    <div class="center mb-18">
+      <div class="kicker">What we do</div>
+      <h2>From concept to launch</h2>
+      <p class="muted wrap-58">We design, build, and ship ambitious digital products with immersive 3D and practical AI.</p>
+    </div>
+    <div class="grid cols-3">
+      <div class="card fade-in">
+        <h3>Interactive 3D Websites</h3>
+        <p class="muted">Three.js, WebGL, and physics-powered experiences that convert visitors into fans.</p>
+        <ul class="muted clean">
+          <li><span class="chip"></span>Three.js / R3F</li>
+          <li><span class="chip"></span>GLTF pipeline</li>
+          <li><span class="chip"></span>Scene optimization</li>
+        </ul>
+      </div>
+      <div class="card fade-in">
+        <h3>AI-Integrated Web Apps</h3>
+        <p class="muted">Chatbots, RAG search, recommendations, forecasting, and workflow automation.</p>
+        <ul class="muted clean">
+          <li><span class="chip"></span>OpenAI / local LLMs</li>
+          <li><span class="chip"></span>RAG pipelines</li>
+          <li><span class="chip"></span>Auth & data privacy</li>
+        </ul>
+      </div>
+      <div class="card fade-in">
+        <h3>Performance & SEO</h3>
+        <p class="muted">Core Web Vitals, accessibility, and semantic markup for discoverability and speed.</p>
+        <ul class="muted clean">
+          <li><span class="chip"></span>Lighthouse 90+</li>
+          <li><span class="chip"></span>A11y best practices</li>
+          <li><span class="chip"></span>Edge/CDN ready</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="container">
+    <div class="center mb-18">
+      <div class="kicker">Selected work</div>
+      <h2>Recent projects</h2>
+      <p class="muted wrap-58">A peek at what we’ve shipped.</p>
+    </div>
+    <div class="grid cols-3">
+      <article class="card fade-in">
+        <div class="thumb"></div>
+        <div class="row">
+          <div>
+            <strong>Product Configurator</strong>
+            <div class="muted small">3D Interaction • AI Recommender</div>
+          </div>
+          <a class="muted" href="#">View →</a>
+        </div>
+      </article>
+      <article class="card fade-in">
+        <div class="thumb"></div>
+        <div class="row">
+          <div>
+            <strong>Digital Twin Dashboard</strong>
+            <div class="muted small">WebGL • Predictive Analytics</div>
+          </div>
+          <a class="muted" href="#">View →</a>
+        </div>
+      </article>
+      <article class="card fade-in">
+        <div class="thumb"></div>
+        <div class="row">
+          <div>
+            <strong>Immersive Brand Site</strong>
+            <div class="muted small">R3F • Parallax • CMS</div>
+          </div>
+          <a class="muted" href="#">View →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Stack -->
+  <section id="stack" class="container">
+    <div class="center mb-18">
+      <div class="kicker">Our toolkit</div>
+      <h2>Battle-tested stack</h2>
+    </div>
+    <div class="grid cols-4">
+      <div class="card muted fade-in">React / Next.js</div>
+      <div class="card muted fade-in">Three.js / R3F</div>
+      <div class="card muted fade-in">TypeScript</div>
+      <div class="card muted fade-in">Node.js / Python</div>
+      <div class="card muted fade-in">TailwindCSS</div>
+      <div class="card muted fade-in">Framer Motion</div>
+      <div class="card muted fade-in">Postgres / MongoDB</div>
+      <div class="card muted fade-in">Docker / CI/CD</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <div class="center mb-18">
+      <div class="kicker">Let’s talk</div>
+      <h2>Ready to launch?</h2>
+      <p class="muted wrap-58">Tell us about your idea. We’ll respond within one business day.</p>
+    </div>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" placeholder="Your full name" required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@company.com" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div>
+          <label for="type">Project type</label>
+          <select id="type" name="type">
+            <option>Interactive 3D Website</option>
+            <option>AI-Integrated Web App</option>
+            <option>Both / Not sure yet</option>
+          </select>
+        </div>
+        <div>
+          <label for="budget">Rough budget</label>
+          <select id="budget" name="budget">
+            <option>₹5k – ₹15k</option>
+            <option>₹15k – ₹40k</option>
+            <option>₹40k – 80k</option>
+            <option>₹80k – 1lakhs</option>  
+            <option>₹1lakhs+</option>            
+          </select>
+        </div>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="What are you building? Timeline, goals…" required></textarea>
+      </div>
+      <div class="form-actions">
+        <button class="btn" type="submit">Send Inquiry</button>
+        <div class="muted">
+          <a href="tel:+44-0000-000000">+44 (0)00 0000 0000</a> •
+          <a href="mailto:hello@iewebarchitects.com">pv.adhiyaman@iewebarchitects.com</a>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-row">
+      <p>© <span id="year"></span> IE Web Architects. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Imprint</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Three.js (CDN) -->
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
